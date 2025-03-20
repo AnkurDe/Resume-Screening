@@ -69,6 +69,7 @@ def process_resume(pdf_path):
     return resume_data
 
 
+
 # User Inputs
 no_of_candidates_present = int(input("How many candidates have applied? "))
 no_of_candidates_to_select = int(input("How many candidates to select? "))
