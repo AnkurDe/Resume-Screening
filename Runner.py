@@ -38,11 +38,11 @@ def extract_skills(text):
 
 
 # Function to Extract Education
-def extract_education(text):
-    education_keywords = ["Bachelor", "Master", "B.Sc", "M.Sc", "PhD", "B.Tech", "M.Tech"]
-    sentences = nltk.sent_tokenize(text)
-    education = [sent for sent in sentences if any(keyword in sent for keyword in education_keywords)]
-    return education
+# def extract_education(text):
+#     education_keywords = ["Bachelor", "Master", "B.Sc", "M.Sc", "PhD", "B.Tech", "M.Tech"]
+#     sentences = nltk.sent_tokenize(text)
+#     education = [sent for sent in sentences if any(keyword in sent for keyword in education_keywords)]
+#     return education
 
 
 # Function to Extract Experience
@@ -59,7 +59,7 @@ def process_resume(pdf_path):
     text = extract_text_from_pdf(pdf_path)
     candidate_name = extract_name(text)  # Extract name from PDF
     skills = extract_skills(text)
-    education = extract_education(text)
+    # education = extract_education(text)
     experience = extract_experience(text)
 
     resume_data = {
